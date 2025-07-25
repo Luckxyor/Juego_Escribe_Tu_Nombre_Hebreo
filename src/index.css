@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+  direction: rtl;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.game-container {
+  min-height: calc(100vh - 100px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilos globales para hebreo */
+h1, h2, h3, p, button, span {
+  font-family: Arial, sans-serif;
+}
+
+/* Mejoras de accesibilidad para niños */
+button:focus {
+  outline: 3px solid #3498db;
+  outline-offset: 2px;
+}
+
+/* Animaciones suaves */
+* {
+  transition: all 0.3s ease;
+}
+
+/* Cursor pointer para elementos interactivos */
+button, .clickable {
+  cursor: pointer;
+}
+
+/* Prevenir selección de texto en elementos interactivos */
+button, .gender-option {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
