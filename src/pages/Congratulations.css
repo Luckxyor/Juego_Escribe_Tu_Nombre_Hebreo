@@ -3,12 +3,17 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 70vh;
-  padding: 20px;
+  min-height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
   direction: rtl;
   background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%);
   overflow: hidden;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
 .celebration-container {
@@ -17,6 +22,9 @@
   align-items: center;
   position: relative;
   z-index: 2;
+  padding: 20px;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .stars {
