@@ -37,9 +37,18 @@ const Congratulations = () => {
           <span className="emoji emoji-6">🏆</span>
         </div>
 
-        <button className="play-again-button" onClick={resetGame}>
-          שחק שוב
-        </button>
+        <div className="buttons-container">
+          <button className="play-again-button" onClick={resetGame}>
+            שחק שוב
+          </button>
+          
+          <button 
+            className="balloon-game-button" 
+            onClick={() => window.open('https://luckxyor.github.io/Juegos_Globos_Basico/', '_blank')}
+          >
+            🎈 משחק הבלונים 🎈
+          </button>
+        </div>
       </div>
     </div>
   );
